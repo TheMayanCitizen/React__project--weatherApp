@@ -1,0 +1,97 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: wheat;
+  background-image: url("https://media0.giphy.com/media/BHWoX8f4EqKcPTALTK/giphy.gif?cid=ecf05e475hu2jp3epjpkwrway273aea8bcyt33z9p8r7jd2x&rid=giphy.gif&ct=g");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff9;
+  padding: 2.5em;
+  border-radius: 0.7em;
+  width: 100%;
+  max-width: 350px;
+}
+
+.card__title {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.card__subtitle {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.card__body {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.card__info--title {
+  text-align: center;
+  margin-bottom: 0.8em;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.card__info--body {
+  display: grid;
+  gap: 0.5em;
+}
+
+.card__info--item {
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-weight: 600;
+}
+
+.card__info--label {
+  font-weight: 300;
+}
+
+.card__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__temperature {
+  margin-bottom: 0.7em;
+}
+
+.card__btn {
+  padding: 0.7em 1.5em;
+  border-radius: 0.3em;
+  font-size: 0.9rem;
+  box-shadow: 0.2em 0.2em 0.7em #000a;
+  filter: brightness(0.95);
+  transition: filter 100ms ease, transform 100ms ease;
+  cursor: pointer;
+}
+
+.card__btn:hover {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
